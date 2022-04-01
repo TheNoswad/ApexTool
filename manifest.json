@@ -3,7 +3,7 @@
   "description": "Quickly search your ApexVS test questions online to check your answers.",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["storage", "activeTab"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
