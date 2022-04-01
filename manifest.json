@@ -1,0 +1,28 @@
+{
+  "name": "ApexTool",
+  "description": "Quickly search your ApexVS test questions online to check your answers.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/apextool16.png",
+      "32": "/images/apextool32.png",
+      "48": "/images/apextool48.png",
+      "128": "/images/apextool128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/apextool16.png",
+    "32": "/images/apextool32.png",
+    "48": "/images/apextool48.png",
+    "128": "/images/apextool128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://course.apexlearning.com/*"],
+      "js": ["brainly.js"]
+    }
+  ]
+}
